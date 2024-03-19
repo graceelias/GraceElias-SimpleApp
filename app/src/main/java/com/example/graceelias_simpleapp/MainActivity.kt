@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity()
         val editor = sharedPreferences.edit()
         editor.putInt("imageNum", imageNum)
         editor.putString("text", binding.editText.text.toString())
+        editor.apply()
     }
 
     private fun updateImage(num: Number)
